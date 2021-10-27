@@ -1,6 +1,96 @@
-h1 {text-shadow: -4px 4px 6px dimgrey;font-size:xx-large;font-weight:bold;color: rgb(22, 33, 39);}
-a {text-align: center;text-shadow: black;font-family: Arial, Helvetica, sans-serif;font-size: medium;font-style: normal;color: rgb(58, 30, 30);}
-a.nodec { text-decoration: none; }
-a:hover { text-decoration: underline; }
-span {text-align:end;border-width: 6px;font-size: larger;font-family: 'Times New Roman', Times, serif;font-weight: bolder;border-style: groove;margin-left: 3px;margin-bottom: 10px;margin-right: 3px;margin-top: 10px;}
-body{background-color:rgb(217, 226, 225)}
+body {font-family: 'Times New Roman', Times, serif;background-color: rgb(190, 217, 226);}
+a {font-family: 'Times New Roman', Times, serif;}
+a.nodec{text-decoration: none; margin-left: 3px; margin-right: 3px;color: rgb(255, 255, 255);text-align: center;font-size: medium;}
+a:hover{color:rgb(108, 108, 204)}
+p {font-size: medium; font-family: 'Times New Roman', Times, serif;}
+p.special{font-weight: lighter;font-style: italic;font-size: 150%;text-align: center;}
+p.clear{font-weight: bolder;font-size: 140%; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+p.datum {font-weight: lighter;color: lightslategrey;}
+p.submit{font-weight: lighter;font-style: italic;font-size: 550%;text-align: center;color: maroon;text-shadow: -4px 4px 2px lightslategray;font-family: 'Times New Roman', Times, serif;}
+p.active{font-size: medium;font-weight: bold;text-align: left;}
+p.nodec{color:darkred;font-size: 130%; font-weight: lighter;font-variant: small-caps;}
+title {font-family: Arial, Helvetica, sans-serif; font-size: medium; font-style: italic;}
+label {font-size: medium; font-family: 'Times New Roman', Times, serif; font-weight: bolder;}
+label.active {font-size: 120%;}
+.special {font-weight: normal;}
+option {font-size: medium; font-family: Arial, Helvetica, sans-serif;}
+h1 {-webkit-text-stroke: 2px rgb(0, 0, 0);color: rgb(35, 35, 131); text-shadow: -4px 4px 6px dimgrey;text-align: center;}
+div {font-family: Arial, Helvetica, sans-serif;}
+.nav {background-color:rgb(23, 23, 46);overflow: hidden;}
+.nav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }  
+  .nav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+h2 {-webkit-text-stroke: 2px rgb(8, 8, 8);color: rgb(29, 29, 77);font-size: 230%;}
+li {color:maroon; font-size: 120%; font-weight: lighter; font-family: Verdana, Geneva, Tahoma, sans-serif;}
+input {font-size: medium;}
+.submit{color: rgb(34, 204, 34);}
+.clear {color:rgb(204, 61, 61);}
+section{
+  background-color: white;
+  margin-bottom: -19px;
+
+}
+.blog{padding-top: 40px;display: grid;grid-template-columns: 50% 25%;justify-content: space-around;padding-bottom: 250px;
+}
+.textblog{resize: none;border: 3px solid black;font-family:'Times New Roman', Times, serif;font-size: 15px;font-weight: bold;}
+.active{font-family: Arial, Ebrima, "Segoe Print";font-size:15px;font-weight: bold;resize:none;text-align: center;}
+body {
+  font-family: Arial;
+  padding: 20px;
+  
+}
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
