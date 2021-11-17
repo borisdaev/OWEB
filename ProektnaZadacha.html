@@ -3,25 +3,58 @@
 <html>
     <head metacharset="utf-8">
         <title>Welcome</title>
-        <link rel="stylesheet" type="text/css" href="Stilovi.css">
+        <link rel="stylesheet" type="text/css" href="proektnazadacha.css">
+        <script src="proektnazadacha.js"></script>
     </head>
+
     <body>
-        <h2>My Personal WebPage</h2>
+      <section>
+      <header>
+        <div class="wrapper">
+          <div class="logo">
+            <img src="" alt="">
+          </div>
+          <ul class="nav-area">
+            <li><a href="#vtor">Home</a></li>
+            <li class="dropdown">
+              <a href="AboutMe.html" class="dropbtn">AboutMe</a>
+              <div class="dropdown-content">
+                <a href="file:///D:/VisualStudioCode_Projects/OWEB/AboutMe.html#movies">Movies</a>
+                <a href="file:///D:/VisualStudioCode_Projects/OWEB/AboutMe.html#sport">Sports&VideoGames</a>
+                <a href="file:///D:/VisualStudioCode_Projects/OWEB/AboutMe.html#tv-series">TV-Series</a>
+              </div>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="Comments.html">Comments</a></li>
+          </ul>
+        </div>
 
-        <p>
-            <a href="Home.html" class="nodec"><span>Home</span></a>
-            <a href="AboutMe.html" class="nodec"><span>AboutMe</span></a>
-            <a href="Gallery.html" class="nodec"><span>Gallery</span></a>
-            <a href="Blog.html" class="nodec"><span>Blog</span></a>
-            <a href="Comments.html" class="nodec"><span>Comments</span></a>
-            <a href="Contact.html" class="nodec"><span>Contact</span></a>
-            
-            
-        </p>
+        <div class="welcome-text">
+          <h1>Hello , welcome to my website . Enjoy </h1>
+          <div class="popup" onclick="myFunction()">ContactMe<span class="popuptext" id="myPopup">Response time:24hours</span>
+          </div>
+        </div>
 
-        <p class="submit">
-            Welcome to 
-            <p class="submit">my WebPage</p>
-        </p>
-    </body> 
+        <div class="logos">
+          <a href="https://www.facebook.com/profile.php?id=100002197151124"><img src="facebook.png" alt="facebook"></a>
+          <a href="mailto:borce-daev@hotmail.com"><img src="email.png" alt="email"></a>
+          <a href="https://github.com/borisdaev/OWEB"><img src="download.png" alt="github"></a>
+        </div>
+      </section>
+
+      <section class="vtor" id="vtor">
+        <h3 id="#home">A few words about me</h3>
+        <h2>Every failed experiment is one step closer to success</h2>
+        <div class="special">Јас сум Борис Даев ,роден сум на 10.06.2000 година во Велес ,  имам 21 година ,
+           во моментов сум студент на Факултетот за електротехника и
+          информациски технологии . Средно образование имам завршено во СОУ "Гимназија Кочо Рацин" - Велес .   </div>
+        <div class="img">
+          <img src="Slika.jpg" height="250" width="350" alt="Picture">
+        </div>
+      </section>
+
+        
+        
+      </header>
+    </body>
 </html>
