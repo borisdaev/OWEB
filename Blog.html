@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+
     <head metacharset="utf-8">
         <title>Blog</title>
         <link rel="stylesheet" type="text/css" href="blog.css">
@@ -17,9 +17,9 @@
         <li class="dropdown">
           <a href="AboutMe.html" class="dropbtn">AboutMe</a>
           <div class="dropdown-content">
-            <a href="file:///D:/VisualStudioCode_Projects/OWEB/AboutMe.html#movies">Movies</a>
-                <a href="file:///D:/VisualStudioCode_Projects/OWEB/AboutMe.html#sport">Sports&VideoGames</a>
-                <a href="file:///D:/VisualStudioCode_Projects/OWEB/AboutMe.html#tv-series">TV-Series</a>
+            <a href="file:///D:/VisualStudioCode_Projects/OWEB-main/AboutMe.html#movies">Movies</a>
+                <a href="file:///D:/VisualStudioCode_Projects/OWEB-main/AboutMe.html#sport">Sports&VideoGames</a>
+                <a href="file:///D:/VisualStudioCode_Projects/OWEB-main/AboutMe.html#tv-series">TV-Series</a>
           </div>
           <li><a href="Blog.html">Blog</a></li>
         <li><a href="Gallery.html">Gallery</a></li>
@@ -73,6 +73,15 @@
                 <div class="fakeimg"><a href="#mkd"><img src="mkd.jpg" class="vtorvid"></a></div>
                 <div class="fakeimg"><a href="#vardar"><img src="vardar.jpg" class="vtorvid"></a></div>
               </div>
+
+              <div class="card">
+                <h4>Add Post</h4>
+                <form action="" id="shelter">
+                  <input id="naslov" placeholder="Write heading">
+                  <textarea cols="30" rows="5" placeholder="Write post here" id="postBlog"></textarea>
+                  <button id="post">Post</button>
+              </form>
+              </div>
               
             </div>
           </div>
@@ -82,7 +91,47 @@
     
 
 
-    </form>
+    
+
+    <script>
+
+    const form = document.querySelector("#shelter");
+    const formatPost = document.querySelector(".leftcolumn");
+    const input = document.querySelector("#postBlog");
+    const naslov = document.querySelector("#naslov");
+    const par = document.querySelector('#posted');
+
+    form.addEventListener("submit", function(e){
+        const d = new Date();
+        const str2 = d.getHours().toString();
+        const str1 = d.getMinutes().toString();
+        const str3 = d.getSeconds().toString();
+        const str = str2+":"+ str1 + ":"+ str3;
+        
+        d.getHours();
+        e.preventDefault(); 
+        const newH3 = document.createElement('h3');
+        const newH5 = document.createElement('h5');
+        const newPar = document.createElement('p');
+        const newDiv = document.createElement('div');
+        const newPic = document.createElement('div');  
+
+        
+        newH3.textContent = naslov.value;
+        newH5.textContent = "Posted at " + str +":   ";
+        newPar.textContent = input.value;
+        newPic.classList.add('fakeimg');
+        
+        newDiv.append(newH3);
+        newDiv.append(newH5);
+        newDiv.append(newPic);
+        newDiv.append(newPar);
+        
+        newDiv.classList.add('card');
+        formatPost.prepend(newDiv);
+    })
+
+    </script>
 
     </body>
-</html>
+

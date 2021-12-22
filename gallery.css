@@ -1,92 +1,246 @@
+* {box-sizing: border-box}
 body{
-    background:linear-gradient(rgba(127, 124, 143, 0.6),rgba(134, 139, 155, 0.6)), url("VtoraPozadina.jpg");
-    height: 100vh;
-    -webkit-background-size:cover;
-    background-size: cover;
-    background-position: center center;
-    position:relative;
+  background:linear-gradient(rgba(127, 124, 143, 0.6),rgba(134, 139, 155, 0.6)), url("VtoraPozadina.jpg");
+  height: 100vh;
+  -webkit-background-size:cover;
+  background-size: cover;
+  background-position: center center;
+  position:relative;
 }
-
+.mySlides {display: none}
+img {vertical-align: middle;}
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-li {
-    float: left;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
-  
-  li a, .dropbtn {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
-  }
-  
-  li.dropdown {
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: rgb(0, 0, 0);
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  .dropdown-content a:hover {background-color: #f1f1f1;}
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
 
-  div.gallery {
-    margin: 10px;
-    border: 1px solid #ccc;
-    float:left;
-    width: 180px;
-  }
-  
-  div.gallery:hover {
-    border: 1px solid #777;
-  }
+li {
+  float: left;
+}
 
-  div.gallery img {
-    width: 100%;
-    height: auto;
-    left:auto;
-    top:auto;
-  }
-  
-  
-  div.desc {
-    padding: 15px;
-    text-align: center;
-  }
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 
-  
-  
-  
-  
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
 
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: rgb(0, 0, 0);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.tekst{
+ font-family:'Times New Roman', Times, serif;
+ font-size:large;
+ width: 96%;
+ text-align: justify;
+ border: none;
+}
+
+
+.slideshow-container {
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: #d1b7a18e;
+}
+
+.Klik_kopche {
+  background-color: lightblue;
+  color: white;
+  border: 1px solid black;
+  font-size: large;
+  font-family:'Times New Roman', Times, serif;
+  text-align: center;
+  width: 20%;
+  float: right;
+ }
+ 
+ .Klik_kopche:hover {
+  background-color: rgb(39, 68, 80);
+  color: black;
+ }
+
+.pole_pozadina{
+    background-color: rgb(223, 209, 132);
+    font-size: large;
+    margin-top: 30px;
+    border: none;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.sredina{
+  text-align: center;
+}
+
+.brojLajkovi{
+  font-weight: lighter;
+  font-style: italic;
+  color:darkred;
+}
+
+.poleKomentari{
+  text-align: justify;
+  font-family:'Times New Roman', Times, serif;
+  box-sizing: border-box;
+  padding: 5px;
+ }
+
+ #poraka{
+  text-align: center;
+  font-weight: lighter;
+  font-style: italic;
+  color:white;
+  font-family: 'Times New Roman';
+  background-color: lightskyblue;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top:2%
+}
+/*
+#prvtekst{
+  display: hidden;
+  opacity: 0;
+  transition: all 0.2s;
+}
+*/
+
+.sredina{
+  
+  text-align: center;
+}
+
+.brojceSlika {
+  color: #000000;
+  font-size: 15px;
+  font-weight: lighter;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.fade { 
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.gallery{
+  padding-top: 3%;
+  padding-bottom:3%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.vtordel{
+  padding-top: 0.2%;
+  background-color: lightgrey;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: lighter;
+  font-style: italic;
+  font-size: large;
+  margin-top: 5%;
+  margin-left:25%;
+  margin-right: 25%;
+  text-align: center;
+}
+
+.vtordel_vnatre {
+  width: 300px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+.novataslika
+{
+  width: 300px;
+  height: 300px;
+}
+
+#vtordel_naslov{
+  text-align: center;
+  font-weight: lighter;
+  font-style: italic;
+  color:white;
+  font-family: 'Times New Roman';
+  background-color: black;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top:2%
+}
 
 

@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 
 <html>
-    <head metacharset="utf-8">
-        <title>Gallery</title>
-        <link rel="stylesheet" type="text/css" href="gallery.css">
-        <script src="gallery.js"></script>
-    </head>
 
-    <body>
-      
+  <head metacharset="UTF-8">
+    <title>Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="gallery.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+  </head>
+
+<body>
+    
+
       <ul>
         <li><a href="ProektnaZadacha.html">Home</a></li>
         <li class="dropdown">
           <a href="AboutMe.html" class="dropbtn">AboutMe</a>
           <div class="dropdown-content">
-            <a href="file:///D:/VisualStudioCode_Projects/OWEB/AboutMe.html#movies">Movies</a>
-                <a href="file:///D:/VisualStudioCode_Projects/OWEB/AboutMe.html#sport">Sports&VideoGames</a>
-                <a href="file:///D:/VisualStudioCode_Projects/OWEB/AboutMe.html#tv-series">TV-Series</a>
+            <a href="file:///D:/VisualStudioCode_Projects/OWEB-main/AboutMe.html#movies">Movies</a>
+                <a href="file:///D:/VisualStudioCode_Projects/OWEB-main/AboutMe.html#sport">Sports&VideoGames</a>
+                <a href="file:///D:/VisualStudioCode_Projects/OWEB-main/AboutMe.html#tv-series">TV-Series</a>
           </div>
           <li><a href="Blog.html">Blog</a></li>
         <li><a href="Gallery.html">Gallery</a></li>
@@ -24,99 +28,290 @@
         </li>
       </ul>
 
-      <div class="gallery">
-        <a target="_blank" href="ZaGalerija.jpg">
-          <img src="ZaGalerija.jpg" alt="Cinque Terre">
-        </a>
-        <div class="desc">Leave a comment or like the photo</div>
-      </div>
+        
 
       <div class="gallery">
-        <a target="_blank" href="ZaGalerija_kosarka.jpg">
-          <img src="ZaGalerija_kosarka.jpg" alt="Mountains" >
-        </a>
-        <div class="desc">Leave a comment or like the photo</div>
-      </div>
+        <div class="naslov"><h1 id="poraka">Life is like a camera . Just focus on what's important and capture the good times,
+           develop from the negatives and if things don't work out , just take another shot.
+        </h1></div>
+            <div class="slideshow-container">
 
-      <div class="gallery">
-        <a target="_blank" href="ZaGalerija_esen.jpeg">
-          <img src="ZaGalerija_esen.jpeg" alt="Mountains">
-        </a>
-        <div class="desc">Leave a comment or like the photo</div>
-      </div>
-      
-      
-      
-      <div class="gallery">
-        <a target="_blank" href="ZaGalerija_sea.jpg">
-          <img src="ZaGalerija_sea.jpg" alt="Northern Lights">
-        </a>
-        <div class="desc">Leave a comment or like the photo</div>
-      </div>
-      
-      <div class="gallery">
-        <a target="_blank" href="ZaGalerija_kosarka.jpg">
-          <img src="ZaGalerija_kosarka.jpg" alt="Mountains">
-        </a>
-        <div class="desc">Leave a comment or like the photo</div>
-      </div>
+                <div class="mySlides fade">
+                    <div class="brojceSlika">1 / 5</div>
+                    <img src="ZaGalerija_kuce.jpg" style="width:100%">
+                    
+                    
+                    <fieldset class="pole_pozadina">
+                    <div class="sredina">
+                    <button id="like1" onclick="onClick1(this)" value="Like">Like</button>
 
-      <div class="gallery">
-        <a target="_blank" href="ZaGalerija_wizzair.jpg">
-          <img src="wizzair.jpg" alt="Mountains">
-        </a>
-        <div class="desc">Leave a comment or like the photo</div>
-      </div>
+                    <p class="brojLajkovi"><label>No.of Likes: <a id="clicks1">0</a> </label></p></div>
+                    <form onsubmit="myFunction1()">
+                      <label>Comments:&#160;</label>
+                      <textarea placeholder="Enter comments here." name="comment" id="com1" style="width: 440px; height:25px; position:relative; bottom:-1ex;"></textarea><br><br>
+                      <input type="submit" class="Klik_kopche" value="Comment">
+                    </form>
+                   
+                    <div id="komentari1"></div>
+                    </fieldset>
+                </div>
 
-      <div class="gallery">
-        <a target="_blank" href="ZaGalerija_sea.jpg">
-          <img src="ZaGalerija_sea.jpg" alt="Mountains">
-        </a>
-        <div class="desc">Leave a comment or like the photo</div>
-      </div>
+                <div class="mySlides fade">
+                    <div class="brojceSlika">2 / 5</div>
+                    <img src="ZaGalerija_sea.jpg" style="width:100%">
+                      <fieldset class="pole_pozadina">
+                        <div class="sredina">
+                        <button id="like2" onclick="onClick2(this)" value="Like">Like</button>
+    
+                        <p class="brojLajkovi"><label>No.of Likes: <a id="clicks2">0</a> </label></p></div>
+                      <form onsubmit="myFunction2()">
+                        <label>Comments:&#160;</label>
+                        <textarea placeholder="Enter comments here." name="comment" id="com2" style="width: 440px; height:25px; position:relative; bottom:-1ex;"></textarea><br><br>
+                        <input type="submit" class="Klik_kopche" value="Comment">
+                      </form>
 
-      <div class="gallery">
-        <a target="_blank" href="ZaGalerija_kuce.jpg">
-          <img src="ZaGalerija_kuce.jpg" alt="Mountains">
-        </a>
-        <div class="desc">Leave a comment or like the photo</div>
-      </div>
+                        <div id="komentari2"></div>
+                    </fieldset>
+                </div>
 
-      <div class="gallery">
-        <a target="_blank" href="ZaGalerija_kosarka.jpg">
-          <img src="ZaGalerija_kosarka.jpg" alt="Mountains">
-        </a>
-        <div class="desc">Leave a comment or like the photo</div>
-      </div>
+                <div class="mySlides fade">
+                    <div class="brojceSlika">3 / 5</div>
+                    <img src="ZaGalerija.jpg" style="width:100%">
+                      
+                      <fieldset class="pole_pozadina">
+                      <div class="sredina">
+                        <button id="like3" onclick="onClick3(this)" value="Like">Like</button>
+    
+                        <p class="brojLajkovi"><label>No.of Likes: <a id="clicks3">0</a> </label></p></div>
+                      <form onsubmit="myFunction3()">
+                            <label>Comments:&#160;</label>
+                            <textarea placeholder="Enter comments here. " name="comment" id="com3"
+                                style="width: 440px; height:25px; position:relative; bottom:-1ex;"></textarea><br><br>
+                            <input type="submit" class="Klik_kopche" value="Comment">
+                      </form>
+                        
+                      <div id="komentari3"></div>
+                    
+                    </fieldset>
+                </div>
 
-      <div class="gallery">
-        <a target="_blank" href="ZaGalerija_esen.jpeg">
-          <img src="ZaGalerija_esen.jpeg" alt="Mountains">
-        </a>
-        <div class="desc">Leave a comment or like the photo</div>
-      </div>
+                <div class="mySlides fade">
+                    <div class="brojceSlika">4 / 5</div>
+                    <img src="ZaGalerija_kosarka.jpg" style="width:100%">
+                      <fieldset class="pole_pozadina">
+                        <div class="sredina">
+                        <button id="like4" onclick="onClick4(this)" value="Like">Like</button>
+    
+                        <p class="brojLajkovi"><label>No.of Likes: <a id="clicks4">0</a> </label></p></div>
+                      <form onsubmit="myFunction4()">
+                            <label>Comments:&#160;</label>
+                            <textarea placeholder="Enter comments here." name="comment" id="com4"
+                                style="width: 440px; height:25px; position:relative; bottom:-1ex;"></textarea><br><br>
+                            <input type="submit" class="Klik_kopche" value="Comment">
+                      </form>
 
-      <div class="gallery">
-        <a target="_blank" href="ZaGalerija_esen.jpeg">
-          <img src="ZaGalerija_esen.jpeg" alt="Mountains">
-        </a>
-        <div class="desc">Leave a comment or like the photo</div>
-      </div>
+                      <div id="komentari4"></div>
+                   
+                    </fieldset>
+                </div>
 
-      
+                <div class="mySlides fade">
+                  <div class="brojceSlika">5 / 5</div>
+                  <img src="ZaGalerija_kamen.jpg" style="width:100%">
+                  <fieldset class="pole_pozadina">
 
+                    <div class="sredina">
+                      <button id="like5" onclick="onClick5(this)" value="Like">Like</button>
   
-        
+                      <p class="brojLajkovi"><label>No.of Likes: <a id="clicks5">0</a> </label></p></div>
+                    <form onsubmit="myFunction5()">
+                          <label>Comments:&#160;</label>
+                          <textarea placeholder="Enter comments here. " name="comment" id="com5"
+                              style="width: 440px; height:25px; position:relative; bottom:-1ex;"></textarea><br><br>
+                          <input type="submit" class="Klik_kopche" value="Comment">
+                    </form>
+                      
+                    <div id="komentari5"></div>
+                  
+                  </fieldset>
+              </div>
 
-        
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" id="nextButton" onclick="plusSlides(1)">&#10095;</a>
 
-        
+            </div>
 
+           <div class="vtordel">
+             <h1 id="vtordel_naslov">Do you have any photos you would like to share with us?</h1>
+                <h3>If you want to attach your picture, do it here, we will decide later if your picture will be selected to be shown on the Slideshow</h3>
+                <div class="vtordel_vnatre">
+                  <input type="file" id="vnes_slika" accept="image/png image/jpg">
+                  <hr>
+               </div>
+               <div class="del_Sliki">
+         
+               </div>
+               </div>
+           </div>
 
-          
-
-
-          
       
-    </body>
+  </body>
+
+
+  <script>
+
+    $(document).ready(function() {
+        $("#poraka").mouseover(function() {
+        $("#poraka").css("color", "darkred");
+    });
+        $("#poraka").mouseout(function() {
+        $("#poraka").css("color", "white");
+    });
+    });
+
+
+    const slikaVnes = document.querySelector("#vnes_slika");
+         const staviSliki = document.querySelector(".del_Sliki");
+         slikaVnes.addEventListener("change", function () {
+            const reader = new FileReader();
+            reader.addEventListener("load", () => {
+              
+               const pic = new Image();
+               pic.src = reader.result;
+               pic.classList.add("novataslika");
+
+               
+            staviSliki.prepend(pic);
+              
+            });
+            reader.readAsDataURL(this.files[0]);
+    });
+
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+          /* 
+        // if(slideIndex == 5)  {
+            document.getElementById("nextButton").innerHTML = "+";
+            else {document.getElementById("nextButton").innerHTML = ">";
+          }
+        }
+            //
+            */
+        slides[slideIndex - 1].style.display = "block";
+    }
+
+    var brojac1 = 0;
+    
+    function onClick1(x) {
+        x.style.background="blue";
+        x.style.color="white";
+        brojac1 += 1;
+        document.getElementById("clicks1").innerHTML = brojac1;
+    };
+
+    var brojac2 = 0;
+
+
+    function onClick2(x) {
+        x.style.background="blue";
+        x.style.color="white";
+        brojac2 += 1;
+        document.getElementById("clicks2").innerHTML = brojac2;
+    };
+
+    var brojac3 = 0;
+
+    function onClick3(x) {
+        x.style.background="blue";
+        x.style.color="white";
+        brojac3 += 1;
+        document.getElementById("clicks3").innerHTML = brojac3;
+    };
+
+    var brojac4 = 0;
+
+    function onClick4(x) {
+        x.style.background="blue";
+        x.style.color="white";
+        brojac4 += 1;
+        document.getElementById("clicks4").innerHTML = brojac4;
+    };
+
+    var brojac5 = 0;
+    
+    function onClick5(x) {
+        x.style.background="blue";
+        x.style.color="white";
+        brojac5 += 1;
+        document.getElementById("clicks5").innerHTML = brojac5;
+    };
+
+    var imeVlez;
+    imeVlez = window.prompt("Vnesete go vasheto ime i prezime" , "defaultName");
+
+    
+    var PrazenStr1 = "";
+    
+    function myFunction1() {
+        event.preventDefault();
+        var vnes = document.getElementById("com1").value;
+        PrazenStr1 += "<div class=\"poleKomentari\"><div><strong>" + imeVlez + ":</strong> " + vnes + " </div></div>"
+        document.getElementById("komentari1").innerHTML = PrazenStr1;
+    }
+
+    var PrazenStr2 = "";
+
+    function myFunction2() {
+        event.preventDefault();
+        var vnes = document.getElementById("com2").value;
+        PrazenStr2 += "<div class=\"poleKomentari\"><div><strong>" + imeVlez + ":</strong> " + vnes + " </div></div>"
+        document.getElementById("komentari2").innerHTML = PrazenStr2;
+    }
+
+    var PrazenStr3 = "";
+
+    function myFunction3() {
+        event.preventDefault();
+        var vnes = document.getElementById("com3").value;
+        PrazenStr3 += "<div class=\"poleKomentari\"><div><strong>" + imeVlez + ":</strong> " + vnes + " </div></div>"
+        document.getElementById("komentari3").innerHTML = PrazenStr3;
+    }
+
+    var PrazenStr4 = "";
+
+    function myFunction4() {
+        event.preventDefault();
+        var vnes = document.getElementById("com4").value;
+        PrazenStr4 += "<div class=\"poleKomentari\"><div><strong>" + imeVlez + ":</strong> " + vnes + " </div></div>"
+        document.getElementById("komentari4").innerHTML = PrazenStr4;
+    }
+
+    var PrazenStr5 = "";
+
+    function myFunction5() {
+        event.preventDefault();
+        var vnes = document.getElementById("com5").value;
+        PrazenStr5 += "<div class=\"poleKomentari\"><div><strong>" + imeVlez + ":</strong> " + vnes + " </div></div>"
+        document.getElementById("komentari5").innerHTML = PrazenStr5;
+    }
+
+  </script>
 </html>

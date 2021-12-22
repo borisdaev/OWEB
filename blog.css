@@ -82,6 +82,7 @@ li.dropdown {
     background-color: #aaa;
     width: 100%;
     padding: 20px;
+    min-height: 100px;
   }
   
   
